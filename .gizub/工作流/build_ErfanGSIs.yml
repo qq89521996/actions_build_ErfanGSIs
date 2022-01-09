@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://bigota.d.miui.com/20.4.27/miui_MIMIX3_20.4.27_8f7879221b_10.0.zip
+  ROM_URL: https://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD1914_A_8.8.9-update-full_1639454027.zip
   ROM_NAME: MIUI
   BUILD_TYPE: ab
   TZ: Asia/Shanghai
@@ -58,8 +58,8 @@ jobs:
        - name: Upload GSI to WeTransfer
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs/output
-              curl -sL https://git.io/file-transfer | sh
-              ./transfer wet ./final/GSI.zip
+              curl -sL https://bit.io/file-transfer | sh
+              ./transfer gof ./final/GSI.zip
 
          
             
